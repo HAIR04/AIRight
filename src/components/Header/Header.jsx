@@ -10,13 +10,13 @@ const Header = () => {
   };
   return (
     <>
-      <div className="fixed w-full px-4 py-2 flex items-center justify-between border-b">
+      <div className="fixed w-full px-4 py-2 flex items-center justify-between border-b bg-white z-50">
         <div className="flex items-center">
           <img src={logo} className="w-11 cursor-pointer"></img>
           <a href="#" className="font-extrabold opacity-80 mx-2 text-red-900 ">
             aiDEAD
           </a>
-          <p className="text-4xl opacity-5">|</p>
+          <hr className="border-t-0 border-l h-10 border-gray-300 mx-2 opacity-30 " />
           <a href="#" className="font-semibold text-sm mx-2 tracking-wide">
             AI Service
           </a>
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <div
           onClick={toggleOverlay}
-          className="bg-orange w-20 text-center box-content px-10 py-2 rounded-3xl  text-white font-medium cursor-pointer"
+          className="bg-orange w-20 text-center text-sm box-content px-10 py-3 rounded-3xl  text-white font-medium cursor-pointer"
         >
           Log in
         </div>
@@ -34,9 +34,9 @@ const Header = () => {
       {isOverlayVisible && (
         <div
           onClick={toggleOverlay}
-          className="fixed w-full bg-black inset-0 bg-bgr-download bg-opacity-50 flex items-center justify-center z-30 transition-example delay-1000"
+          className="  fixed w-full bg-black inset-0 bg-bgr-download bg-opacity-50 flex items-center justify-center z-30 transition-example delay-1000"
         >
-          <div className="w-[19%] p-10 bg-white mx-auto  rounded-4xl">
+          <div className=" w-[19%] p-10 bg-white mx-auto  rounded-4xl">
             <img src={logo} className="w-11 m-auto"></img>
             <p className="text-center text-2xl font-bold opacity-90 pt-5 ">
               Welcome to aiRight
