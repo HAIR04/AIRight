@@ -1,12 +1,36 @@
+import React , {useState} from "react";
 import img_Banner from "../../../assets/images/kRXF6idEnQQc.png";
 const Banner = () => {
+  const [number, setNumber] = useState(1)
+  const [number1, setNumber1] = useState(10)
+  const prevNumber = () =>{
+    if(number > 1){
+      setNumber(number-1)
+      setNumber1(number1-10)
+    }
+       
+  }
+  const nextNumber = () =>{
+    setNumber(number+1)
+    setNumber1(number1+10)
+  }
+
   return (
     <>
-      <div className="w-[85%]  py-8 mx-auto">
+      <div className="py-7 mx-auto
+      2xl:w-[95%]
+      xl:w-[95%]">
         <div className="flex border rounded-3xl">
-          <img src={img_Banner} className="w-[57%] rounded-l-3xl"></img>
+         <div className=" bg-black_banner rounded-l-2xl flex items-center justify-center
+         2xl:w-[56.5%]
+          xl:w-[50%]">
+         <img src={img_Banner} className="
+         "></img>
+         </div>
 
-          <div className="w-[3/6] p-9">
+          <div className=" px-10 py-7
+          2xl:w-[53%]
+          xl:w-[50%]">
             <span className="text-2xl font-semibold">
               Samorai Coders: Leading the AI <br></br>
               Revolution in Web3
@@ -45,14 +69,14 @@ const Banner = () => {
             <div className="flex py-2 justify-between"> 
               <div className="flex flex-col gap-2">
                 <p className="text-15px font-medium opacity-60">Price</p>
-                <p className="text-2xl font-semibold">10,000 AIRI</p>
+                <p className="text-2.5 font-semibold">10,000 AIRI</p>
               </div>
               <div className="flex flex-col gap-2">
                 <p  className="text-15px font-medium opacity-60">Quantity</p>
-               <div className=" flex justify-evenly border rounded-lg items-center">
-               <button className="px-8 py-2 box-content font-bold">-</button>
-                <p className="font-bold">1</p>
-                <button className="px-8 py-2 box-content font-bold">+</button>
+               <div className=" flex justify-between border text-lg border-gray-300 rounded-lg px-3 items-center w-[155px] font-medium py-1">
+               <button onClick={prevNumber}  className=" box-content">-</button>
+                <p>{number}</p>
+                <button onClick={nextNumber} className=" box-content">+</button>
                </div>
               </div>
             </div>
@@ -61,7 +85,7 @@ const Banner = () => {
               <p className="font-semibold text-17px">
                 <span className="font-normal"> Total: {""}</span>
              
-               10,000 AIRI</p>
+               {number1},000 AIRI</p>
               <button className="bg-blue-400 px-5 py-2 rounded-3xl opacity-30">
                 <p className="font-bold text-white text-15px">
               Ended

@@ -29,7 +29,7 @@ export const img_Slider_1 = [
       url: "https://data.airight.io/DALL-E-2&3/mFuBkpXcJZ0W.png",
       name: "SHARK HUNTER",
       price: "9,500 AIRI",
-      volume: "75,678.`121` AIRI",
+      volume: "75,678.121 AIRI",
     },
   ];
   
@@ -62,7 +62,7 @@ export const img_Slider_1 = [
       url: "https://data.airight.io/DALL-E-2&3/G7456AJY32yA.png",
       name: "JAX",
       price: "9,500 AIRI",
-      volume: "75,678.`121` AIRI",
+      volume: "75,678.121 AIRI",
     },
   ];
   

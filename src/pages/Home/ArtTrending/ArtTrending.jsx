@@ -5,17 +5,25 @@ const ArtTrending = () => {
   return (
     <>
       <div className="w-full relative group pb-10">
-      <div className="w-[85%] mx-auto flex justify-between">
+      <div className=" mx-auto flex justify-between 
+      2xl:w-[95%]
+      xl:w-[93%]">
       <p className="text-3xl font-medium">Trending in Art</p>
       <button className="bg-lightblue text-sm font-medium px-5 rounded-3xl">View category</button>
       </div>
-        <div className="w-[87%] flex mx-auto justify-evenly overflow-hidden py-5">
+        <div className=" flex mx-auto  py-5
+        2xl:w-[95%] 2xl:gap-4
+        xl:w-[97%]">
             
           {img_Slider.map((item, index) => (
-            <div className="border-8 border-white rounded-2xl shadow-lg  ">
+            <div className="border-8 border-white rounded-2xl shadow-lg 
+            2xl:w-[100%] 2xl:ml-0
+            xl:ml-5  ">
               <div
                 key={index}
-                className="w-[240px] h-[260px] bg-cover bg-center rounded-2xl  relative"
+                className=" bg-cover  rounded-2xl  relative
+                2xl:w-[100%] 2xl:pb-[100%]
+                xl:w-[210px] xl:h-[210px]"
                 style={{ backgroundImage: `url(${item.url})` }}
               ></div>
 

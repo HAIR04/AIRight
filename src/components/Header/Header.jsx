@@ -26,7 +26,9 @@ const Header = () => {
         </div>
         <div
           onClick={toggleOverlay}
-          className="bg-orange w-20 text-center text-sm box-content px-10 py-3 rounded-3xl  text-white font-medium cursor-pointer"
+          className="bg-orange text-center text-sm box-content  rounded-3xl text-white font-medium cursor-pointer
+          xl:w-16 xl:px-12 xl:py-2.5 
+          2xl:w-20  2xl:px-10 2xl:py-2.5 2xl:mr-1"
         >
           Log in
         </div>
@@ -34,9 +36,11 @@ const Header = () => {
       {isOverlayVisible && (
         <div
           onClick={toggleOverlay}
-          className="  fixed w-full bg-black inset-0 bg-bgr-download bg-opacity-50 flex items-center justify-center z-30 transition-example delay-1000"
+          className="  fixed w-full bg-black inset-0 bg-bgr-download bg-opacity-50 flex items-center justify-center z-50 transition-example delay-1000"
         >
-          <div className=" w-[19%] p-10 bg-white mx-auto  rounded-4xl">
+          <div className="  p-10 bg-white mx-auto  rounded-4xl
+          xl:w-[24%] xl:py-11
+          2xl:w-[24%] 2xl:py-12">
             <img src={logo} className="w-11 m-auto"></img>
             <p className="text-center text-2xl font-bold opacity-90 pt-5 ">
               Welcome to aiRight

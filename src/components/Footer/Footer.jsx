@@ -6,16 +6,18 @@ const Footer = () =>{
 
     return(
         <>
-        <div className="bg-lightblue ">
+        <div className="bg-lightblue mt-5 w-full">
           <div className="flex">         
-            <div className="w-[38%] flex flex-col p-16 gap-5 ">
+            <div className=" flex flex-col p-12 gap-6 
+            2xl:w-[38%]
+            xl:w-[40.5%]">
             <div className="flex items-center ">
             <img src={logo} className="w-14 cursor-pointer"></img>
           <a href="#" className="font-extrabold opacity-80 mx-2 text-red-900 ">
             aiDEAD
           </a>
             </div>
-            <p>aiRight is the world-first Web UI platform empowering anyone to create with AI models & a massive data library.
+            <p>adDEAD is the world-first Web UI platform empowering anyone to create with AI models & a massive data library.
                  Safeguard your copyright on-chain - all without coding. Free your creativity!
             </p>
             <p className="opacity-60">
@@ -23,20 +25,22 @@ const Footer = () =>{
               </p>   
 
               </div>
-              <div className="w-[55%]   flex justify-evenly ">
-              <div className="flex flex-col p-16">
+              <div className="flex  justify-evenly
+              2xl:w-[55%]   
+              xl:w-[60%]">
+              <div className="flex flex-col p-14 w-[30%]">
                 <span className="text-xl font-semibold mb-5">About</span>
                 <a href="#" className='leading-8'>Introduction</a>
                 <a href="#" className='leading-8'>Careers</a>
               </div>
-              <div className="flex flex-col p-16">
+              <div className="flex flex-col p-14 w-[30%]">
               <span className="text-xl font-semibold mb-5">Ecosystem</span>
               <a href="#" className='leading-8'>Mainnet</a>
               <a href="#" className='leading-8'>Oraichain VRF 2.0</a>
               <a href="#" className='leading-8'>EUENO</a>
               <a href="#" className='leading-8'>Other dApps</a>
               </div>
-              <div className="flex flex-col p-16">
+              <div className="flex flex-col p-14 w-[30%]">
               <span className="text-xl font-semibold mb-5">Resources</span>
               <a href="#" className='leading-8'>Media kit</a>
               <a href="#" className='leading-8'>Patent</a>

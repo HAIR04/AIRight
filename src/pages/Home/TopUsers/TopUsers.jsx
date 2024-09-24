@@ -3,12 +3,14 @@ import { Data_User_1, Data_User_2, Data_User_3 } from "./Data_User";
 const TopUsers = () => {
   return (
     <>
-    <div className="w-[85%] mx-auto border-25 border-lightblue rounded-3xl my-10">
+    <div className=" mx-auto  border-lightblue rounded-3xl my-10 border-25
+    2xl:w-[100%] 2xl:border-x-40
+    xl:w-[100%] xl:border-x-40">
       <div className=" bg-white rounded-3xl ">
         <div className="w-full p-5  rounded-3xl ">
           <p className="text-3xl font-medium leading-loose">Top creators</p>
           <div className="flex justify-evenly">
-            <div className="w-[33%] grid grid-rows-4">
+            <div className="w-[40%] grid grid-rows-4">
               {Data_User_1.map((item, index) => (
                 <React.Fragment key={index}>
                   <div className="w-full h-16 flex justify-between">
@@ -29,7 +31,7 @@ const TopUsers = () => {
                 </React.Fragment>
               ))}
             </div>
-            <div className="w-[33%] grid grid-rows-4">
+            <div className="w-[40%] grid grid-rows-4">
               {Data_User_2.map((item, index) => (
                 <React.Fragment key={index}>
                   <div className="w-full h-16 flex justify-between ml-10">
@@ -51,7 +53,7 @@ const TopUsers = () => {
                 </React.Fragment>
               ))}
             </div>
-            <div className="w-[33%] grid grid-rows-4">
+            <div className="w-[40%] grid grid-rows-4">
               {Data_User_3.map((item, index) => (
                 <React.Fragment key={index}>
                   <div className="w-full h-16 flex justify-between ">
